@@ -20,6 +20,16 @@ docker run -p 8080:8080 receipt-processor
 
 ### **3. Test the receipt processor**
 
-Use the endpoints in Postman or Browser
+Try the endpoints in Postman or Browser
+> The application is running on "localhost:8080"
 
-Endpoint 1. Process Receipt:
+Endpoint 1. Process Receipt 
+* Path: `/receipts/process`
+* Method: `POST`
+* Payload: Receipt JSON
+* Response: JSON containing an id for the receipt.
+
+Endpoint 2. Get Point
+* Path: `/receipts/{id}/points`
+* Method: `GET`
+* Response: A JSON object containing the number of points awarded.
