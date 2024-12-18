@@ -12,11 +12,15 @@ cd receipt-processor
 ```
 
 ### **2. Build and Run Using Docker**
-
-```bash
-docker build -t receipt-processor .
-docker run -p 8080:8080 receipt-processor
-```
+a. Install all the maven dependecy
+   ```bash
+   mvn clean install -T 2C
+   ```
+b. Run on Docker
+  ```bash
+  docker build -t receipt-processor .
+  docker run -p 8080:8080 receipt-processor
+  ```
 
 ### **3. Test the receipt processor**
 
