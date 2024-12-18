@@ -14,7 +14,7 @@ cd receipt-processor
 ### **2. Build and Run Using Docker**
 a. Install all the maven dependecy
    ```bash
-   mvn clean install -T 2C
+   mvn clean install
    ```
 b. Run on Docker
   ```bash
